@@ -1,0 +1,47 @@
+.logoimage{
+    width: 70px;
+    height: 70px;
+}
+span{
+    font-size: 40px;
+}
+.logo{
+    background-color: rgb(171, 209, 241);
+    width: 240px;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 900;
+    color: black;
+}
+.navbar, a{
+    background-color: rgb(82, 82, 82);
+    width: 240px;
+    height: 553px;
+}
+.searchbar{
+    margin-left: 500px;
+    font-size: 25px;
+    border-left: n;
+}
+button{
+          font-size: 25px;
+}
+table{
+    border: none;
+}
+.btn{
+    margin-left: 200px;
+}
+button{
+    background-color: rgb(82, 82, 82);
+    color: black;
+    font-weight: 700;
+}
+input{
+    background-color: rgb(171, 209, 241);
+}
+body{
+    background-color: gray;
+}

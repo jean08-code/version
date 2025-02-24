@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>LINK STORM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="login-container">
-    <h2>Login</h2>
-    <form id="loginForm" onsubmit="return validateForm()">
-      <div class="input-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="input-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit">Login</button>
-    </form>
-    <p id="error-message" class="error-message"></p>
-  </div>
-
-  <script src="script.js"></script>
+    <header>
+        <!--logo-->
+        <div class="logo"><img class="logoimage" src="logoimage.jfif" alt="logoimage"><span>LINK</span><i><b>STORM</b></i>
+                <!--search bar-->
+                <table>
+                <tr>
+      <td>  <input type="search" name="search" class="searchbar"></td><td><button><i class="fa fa-fw fa-search"></i></button></td>
+      <!--login button-->
+      <span>
+        <td>
+         <button class="btn" onclick="addEventListener()">
+               <i class="fa fa-fw fa-user"></i>
+            </button>
+       
+        </td>
+    </span>
+    </tr>
+</table>
+        </div>
+    </header>
+    <nav id="navbar" class="navbar">
+        <a href="home.html"><i class="fa fa-fw fa-home"></i>HOME</a><br><br><br><br><br><br>
+            <a href=""><i class="fa fa-fw fa-search"></i>EXPLORE</a><br><br><br><br><br>
+            <a href=""><i class="fa fa-fw fa-info-circle"></i>ABOUT</a><br><br><br><br><br>
+            <a href=""><i class="fa fa-fw fa-queston-circle"></i>HELP</a><br><br><br><br><br>    
+    </nav>
+    <script src="script.js"></script>
 </body>
 </html>

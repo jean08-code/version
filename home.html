@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Programmers & Users Connect</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa fa-fw fa-home"></i></a></li>
+            <li><a href="#programmers">For Programmers</a></li>
+            <li><a href="#users">For End Users</a></li>
+            <li><a href="#login"><i class="fa fa-fw fa-user"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <header>
+        <div class="hero">
+            <h1>Welcome to the Programmers & Users Connect</h1>
+            <p>Connecting Programmers and End Users for better collaboration</p>
+            <a href="#login" class="cta-btn">Join Us</a>
+        </div>
+    </header>
+
+    <!-- For Programmers Section -->
+    <section id="programmers">
+        <div class="section-title">
+            <h2>For Programmers</h2>
+        </div>
+        <div class="content">
+            <p>Showcase your skills, projects, and connect with end users who need your services.</p>
+            <button class="cta-btn" onclick="switchToLogin('programmer')">Become a Programmer</button>
+        </div>
+    </section>
+
+    <!-- For End Users Section -->
+    <section id="users">
+        <div class="section-title">
+            <h2>For End Users</h2>
+        </div>
+        <div class="content">
+            <p>Find the perfect programmer for your project or hire someone to help you with your needs.</p>
+            <button class="cta-btn" onclick="switchToLogin('user')">Find a Programmer</button>
+        </div>
+    </section>
+
+    <!-- Login / Sign Up Section -->
+    <section id="login">
+        <div class="section-title">
+            <h2>Login / Sign Up</h2>
+        </div>
+        <div class="content">
+            <div id="user-role-message"></div>
+            <form id="login-form" onsubmit="handleLogin(event)">
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="toggleSignUp()">Sign up</a></p>
+            <p id="signup-message" style="display:none;">Already have an account? <a href="#" onclick="toggleSignUp()">Login</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LINK <i>storm</i></p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
